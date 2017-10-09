@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JuegoAleatorio.Aleatorio">
+    <ContentPage.Content>
+        <StackLayout   Orientation="Vertical" VerticalOptions="CenterAndExpand" >
+            <Label x:Name="Intentos" Text="" />
+            <StackLayout   Orientation="Horizontal" VerticalOptions="CenterAndExpand" >
+                <Label  x:Name="PrimerNumero" Text="" />
+                <Label  x:Name="Operacion" Text="" />
+                <Label x:Name="SegundoNumero" Text="" />
+            </StackLayout>
+            <Entry x:Name="Resultado" Placeholder="Escribe tu resultado"></Entry>
+            <Button Text="Enviar" Clicked="EnviarResultado">
+            </Button>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

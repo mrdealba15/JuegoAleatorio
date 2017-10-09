@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:JuegoAleatorio"
+             x:Class="JuegoAleatorio.MainPage">
+   
+
+
+    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+
+        <Label Text="Ingresa tu nombre!" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" 
+            FontSize = "35" />
+
+        <Entry x:Name="Nombre" Placeholder="El nombre"></Entry>
+
+        <Picker x:Name="Numero" SelectedIndex="{Binding Industry}" HorizontalOptions="FillAndExpand">
+            <Picker.Items>
+                <x:String>3</x:String>
+                <x:String>5</x:String>
+                <x:String>10</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Button Text="Comenzar" Clicked="Comenzar">
+            </Button>
+    </StackLayout >
+
+    
+</ContentPage>
